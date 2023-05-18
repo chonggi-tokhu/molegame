@@ -72,6 +72,7 @@ tudojigame.prototype = {
   gameover() {
     this.game.gameover1 = 1;
     console.log("game over" + this.game.gameover1);
+    document.getElementById("status").innerHTML = "<h2 style="color:var(--blue);">GAME OVER</h2>";
     if (this.game.score > 14) {
       console.log(this.game.score);
       window.setTimeout(this.gametest, 1500);
